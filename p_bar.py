@@ -91,14 +91,15 @@ async def progress_bar(current, total, reply, start):
             # Calculate progress bar dots
             #ab mila dil ko sukun #by AirPheonix
             #change from here if you want 
-            bar_length = 11
+            bar_length = 10
             completed_length = int(current * bar_length / total)
             remaining_length = bar_length - completed_length
-            progress_bar = "▓" * completed_length + "▒" * remaining_length
+            progress_bar = "▰" * completed_length + "▱" * remaining_length
             
             try:
-                await reply.edit(f'`╭━━━━❰ᴘʀᴏɢʀᴇss ʙᴀʀ❱━➣ \n┣⪼ ⚡{progress_bar} : {perc}\n┣⪼ 🚀 sᴘᴇᴇᴅ : {sp} \n┣⪼ 📟 ᴘʀᴏᴄᴇssᴇᴅ : {cur}\n┣⪼ 💾 sɪᴢᴇ- ᴇᴛᴀ :  {tot} : {eta} \n╰━━⌈⚡﹝𝐌𝐞𝐧𝐃𝐚𝐗™❤️﹞⚡⌋━━➣`\n') 
-         #       await reply.edit(f'`╭━━━━❰ᴘʀᴏɢʀᴇss ʙᴀʀ❱━➣ \n┣⪼ ⚡{progress_bar} : {perc}\n┣⪼ 🚀 sᴘᴇᴇᴅ : {sp} \n┣⪼ 📟 ᴘʀᴏᴄᴇssᴇᴅ : {cur}\n┣⪼ 💾 sɪᴢᴇ- ᴇᴛᴀ :  {tot} : {eta} \n╰━⌈  𝘽𝙤𝙩 𝙈𝙖𝙙𝙚 𝙗𝙮 𝐌𝐞𝐧𝐝𝐚𝐱™❤️⌋─━━➣`\n') 
+                await reply.edit(f'╭───💥 𝗨𝗣𝗟𝗢𝗔𝗗𝗘𝗥 💥───╮ \n┣{progress_bar} \n┣𝗦𝗣𝗘𝗘𝗗 ⚡ ➠ {sp} \n┣𝗣𝗥𝗢𝗚𝗥𝗘𝗦𝗦 🧭 ➠ {perc} \n┣𝗟𝗢𝗔𝗗𝗘𝗗 🗂️ ➠ {cur} \n┣𝗦𝗜𝗭𝗘 🧲 ➠ {tot} \n┣𝗘𝗧𝗔 ⏳ ➠ {eta} \n╰────[@DOCTOR_JB](tg://user?id=8144269730)⁬────╯ \n')
+                #await reply.edit(f'`**╭━━━━━━━━━━━━━ ❀° ━━━╮**\n**┣⪼ᴘʀᴏɢʀᴇss ʙᴀʀ** \n║╭━━━━━━━━━━━━━━━➣\n║┣ ⚡[{progress_bar}] : {perc}\n║┣ 🚀 sᴘᴇᴇᴅ : {sp} \n║┣ 📟 ᴘʀᴏᴄᴇssᴇᴅ : {cur}\n║┣ 💾 sɪᴢᴇ :{tot}\n║┣ ⏳ ᴇᴛᴀ :{eta} \n║╰━━━━━━━━━━━━━━━➣\n┣⪼ᴘᴏᴡᴇʀᴇᴅ ʙʏ: @DOCTOR_JB\n╰━━━━━━━━━━━━━ ❀° ━━━╯シ`') 
+                #await reply.edit(f'`╭━━━━❰ᴘʀᴏɢʀᴇss ʙᴀʀ❱━➣ \n┣⪼ ⚡{progress_bar} : {perc}\n┣⪼ 🚀 sᴘᴇᴇᴅ : {sp} \n┣⪼ 📟 ᴘʀᴏᴄᴇssᴇᴅ : {cur}\n┣⪼ 💾 sɪᴢᴇ- ᴇᴛᴀ :  {tot} : {eta} \n@DOCTOR_JB⌋─━━➣`\n') 
             except FloodWait as e:
                 time.sleep(e.x)
-
+                

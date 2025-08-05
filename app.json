@@ -1,26 +1,26 @@
 {
-    "name": "𝐓𝐞𝐱𝐭 Uploader 『Mendax",
+    "name": "𝐓𝐞𝐱𝐭 Uploader 𝐃𝐈𝐋𝐉𝐀𝐋𝐄  ™",
     "description": "Download videos from various websites using this telegram bot",
-    "logo": "https://graph.org/file/45f562dc05b2874c7277e.jpg",
+    "logo": "https://envs.sh/srE.jpg",
     "keywords": [
         "text-video",
         "video-extract",
         "pyrogram"
     ],
-    "repository": "https://github.com/mohitbooraget/New_Txt_Random",
-    "success_url": "https://telegram.me/imendaxpublic",
+    "repository": "https://github.com/hackercoder24/updatetxt2vid",
+    "success_url": "https://telegram.me/diljalechatsherebot",
     "stack": "container",
     "env": {
         "API_ID": {
-            "description": "Enter your API id You can generate by https://my.telegram.org/auth",
+            "description": "26416404",
             "required": true
         },
         "API_HASH": {
-            "description": "Enter your API Hash You can generate by https://my.telegram.org/auth",
+            "description": "655b8dc1517dacb007deb53fc0fda30d",
             "required": true
         },
         "BOT_TOKEN": {
-            "description": "Enter your bot token You can generate by @BotFather",
+            "description": "Enter your bot token",
             "required": true
         }
     },
